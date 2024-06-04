@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Конфігуратор ПК</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Конфігуратор деталей персонального комп'ютера</h1>
+        <div class="components">
+            <table>
+                <thead>
+                    <tr><th class="header">Процесори</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="component" draggable="true" data-type="cpu" id="cpu1">Intel Core i9</td></tr>
+                    <tr><td class="component" draggable="true" data-type="cpu" id="cpu2">AMD Ryzen 9</td></tr>
+                    <tr><td class="component" draggable="true" data-type="cpu" id="cpu3">Intel Core i7</td></tr>
+                    <tr><td class="component" draggable="true" data-type="cpu" id="cpu4">AMD Ryzen 7</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr><th class="header">Відеокарти</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="component" draggable="true" data-type="gpu" id="gpu1">NVIDIA RTX 3080</td></tr>
+                    <tr><td class="component" draggable="true" data-type="gpu" id="gpu2">AMD Radeon RX 6800</td></tr>
+                    <tr><td class="component" draggable="true" data-type="gpu" id="gpu3">NVIDIA RTX 3070</td></tr>
+                    <tr><td class="component" draggable="true" data-type="gpu" id="gpu4">AMD Radeon RX 6700 XT</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr><th class="header">Оперативна пам'ять</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="component" draggable="true" data-type="ram" id="ram1">Corsair 16GB DDR4</td></tr>
+                    <tr><td class="component" draggable="true" data-type="ram" id="ram2">G.Skill 32GB DDR4</td></tr>
+                    <tr><td class="component" draggable="true" data-type="ram" id="ram3">Kingston 8GB DDR4</td></tr>
+                    <tr><td class="component" draggable="true" data-type="ram" id="ram4">HyperX 64GB DDR4</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr><th class="header">Жорсткі диски</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="component" draggable="true" data-type="hdd" id="hdd1">Seagate 1TB HDD</td></tr>
+                    <tr><td class="component" draggable="true" data-type="hdd" id="hdd2">Western Digital 2TB HDD</td></tr>
+                    <tr><td class="component" draggable="true" data-type="hdd" id="hdd3">Samsung 500GB SSD</td></tr>
+                    <tr><td class="component" draggable="true" data-type="hdd" id="hdd4">Crucial 1TB SSD</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr><th class="header">Блоки живлення</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="component" draggable="true" data-type="psu" id="psu1">Corsair 650W</td></tr>
+                    <tr><td class="component" draggable="true" data-type="psu" id="psu2">EVGA 750W</td></tr>
+                    <tr><td class="component" draggable="true" data-type="psu" id="psu3">Cooler Master 550W</td></tr>
+                    <tr><td class="component" draggable="true" data-type="psu" id="psu4">Seasonic 850W</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr><th class="header">Охолодження</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="component" draggable="true" data-type="cooling" id="fan">Вентилятор</td></tr>
+                    <tr><td class="component" draggable="true" data-type="cooling" id="liquid">Водяне охолодження</td></tr>
+                </tbody>
+            </table>
+        </div>        
+        <div class="dropzone" id="dropzone">
+            <h2>Ваша конфігурація ПК</h2>
+        </div>
+        <button id="completeBtn">Завершити</button>
+        <button id="resetBtn">Скинути вибір</button>
+        <div id="configOutput"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

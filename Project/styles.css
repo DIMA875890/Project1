@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: url('photo.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0px solid rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.components {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+th, td {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th.header {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.component {
+    background-color: #fff;
+    color: black;
+    cursor: grab;
+    transition: background-color 0.3s ease;
+}
+
+.component:hover {
+    background: #e0e0e0;
+}
+
+.component.selected {
+    background: lightblue;
+}
+
+.component.blocked {
+    background: lightblue;
+    cursor: not-allowed;
+}
+
+.dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dropzone.dragover {
+    background: #f0f0f0;
+}
+
+.dropzone .component {
+    cursor: pointer;
+}
+
+#completeBtn, #resetBtn {
+    padding: 15px 30px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+#completeBtn:hover, #resetBtn:hover {
+    background: #45a049;
+}
+
+#resetBtn {
+    background: #f44336;
+}
+
+#resetBtn:hover {
+    background: #e53935;
+}
+
+#configOutput {
+    background: lightgray; 
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    margin-top: 20px;
+}
+.components table {
+    opacity: 0.5;
+    width: 23%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
